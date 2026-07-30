@@ -1,19 +1,47 @@
 aid: avi-networks
 name: AVI Networks
-description: 'AVI Networks is a company surfaced as a portfolio company of greylock and added to the API
-  Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  AVI Networks builds a software-defined application delivery platform - the Avi
+  Vantage Platform / Avi Load Balancer - providing multi-cloud load balancing,
+  web application firewall (WAF), GSLB, container ingress, and analytics driven
+  by a central Avi Controller with a fully programmable REST API. Founded in 2012
+  and headquartered in Santa Clara, California, AVI Networks was acquired by
+  VMware in 2019 and the product is now offered by Broadcom as the VMware Avi
+  Load Balancer. The controller exposes a comprehensive REST API with first-party
+  Python, Go, and Java SDKs, a Terraform provider, and Ansible automation for
+  intent-based, self-service application services across VMware, AWS, Azure, GCP,
+  OpenStack, and bare-metal environments.
 url: https://raw.githubusercontent.com/api-evangelist/avi-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://avinetworks.com/wp-content/uploads/2018/03/avi-networks-logo.png
 tags:
 - Company
 - Infrastructure
+- Load Balancing
+- Application Delivery
+- Networking
+- Multi-Cloud
+- Web Application Firewall
+- Kubernetes Ingress
+- Load Balancer
+- REST API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,18 @@ maintainers:
 common:
 - type: Website
   url: https://avinetworks.com/
+- type: DeveloperPortal
+  url: https://www.vmware.com/products/cloud-infrastructure/avi-load-balancer
+- type: GitHubOrganization
+  url: https://github.com/avinetworks
+- type: Packages
+  url: packages/avi-networks-packages.yml
+- type: SDKs
+  url: packages/avi-networks-packages.yml
+- type: DomainSecurity
+  url: security/avi-networks-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
