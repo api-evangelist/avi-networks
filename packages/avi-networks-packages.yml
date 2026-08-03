@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/vmware/alb-sdk
+description: >-
+  First-party client libraries and infrastructure-as-code providers for the Avi
+  Controller REST API (Avi Load Balancer / Avi Vantage). AVI Networks was
+  acquired by VMware in 2019 and is now part of Broadcom; the SDKs are maintained
+  in the VMware ALB SDK monorepo (github.com/vmware/alb-sdk) and the historical
+  avinetworks GitHub organization. Each entry was verified against its public
+  registry or source repository at fetch time. Registry HTTP status recorded when
+  probed.
+packages:
+  - language: python
+    registry: pypi
+    name: avisdk
+    url: https://pypi.org/project/avisdk/
+    source: https://github.com/vmware/alb-sdk
+    install: pip install avisdk
+    version: 32.1.2
+    official: true
+    note: Avi Python API SDK for the Avi Controller REST API with samples and utilities.
+  - language: go
+    registry: go
+    name: github.com/vmware/alb-sdk/go
+    url: https://pkg.go.dev/github.com/vmware/alb-sdk/go
+    source: https://github.com/vmware/alb-sdk
+    install: go get github.com/vmware/alb-sdk/go
+    official: true
+    note: Avi Go SDK - AviClients, session and models for REST communication with the controller.
+  - language: java
+    registry: source
+    name: alb-sdk (java)
+    url: https://github.com/vmware/alb-sdk/tree/master/java
+    source: https://github.com/vmware/alb-sdk
+    official: true
+    note: Avi Java SDK for CRUD operations against the Avi Controller. Source-distributed in the alb-sdk monorepo.
+  - language: hcl
+    registry: terraform
+    name: terraform-provider-avi
+    url: https://github.com/avinetworks/terraform-provider-avi
+    source: https://github.com/vmware/terraform-provider-avi
+    official: true
+    note: Terraform provider for AVI Networks / Avi Load Balancer (archived fork of vmware/terraform-provider-avi).
