@@ -1,16 +1,12 @@
 aid: avi-networks
 name: AVI Networks
-description: >-
-  AVI Networks builds a software-defined application delivery platform - the Avi
-  Vantage Platform / Avi Load Balancer - providing multi-cloud load balancing,
-  web application firewall (WAF), GSLB, container ingress, and analytics driven
-  by a central Avi Controller with a fully programmable REST API. Founded in 2012
-  and headquartered in Santa Clara, California, AVI Networks was acquired by
-  VMware in 2019 and the product is now offered by Broadcom as the VMware Avi
-  Load Balancer. The controller exposes a comprehensive REST API with first-party
-  Python, Go, and Java SDKs, a Terraform provider, and Ansible automation for
-  intent-based, self-service application services across VMware, AWS, Azure, GCP,
-  OpenStack, and bare-metal environments.
+description: AVI Networks builds a software-defined application delivery platform - the Avi Vantage Platform / Avi
+  Load Balancer - providing multi-cloud load balancing, web application firewall (WAF), GSLB, container ingress,
+  and analytics driven by a central Avi Controller with a fully programmable REST API. Founded in 2012 and headquartered
+  in Santa Clara, California, AVI Networks was acquired by VMware in 2019 and the product is now offered by Broadcom
+  as the VMware Avi Load Balancer. The controller exposes a comprehensive REST API with first-party Python, Go,
+  and Java SDKs, a Terraform provider, and Ansible automation for intent-based, self-service application services
+  across VMware, AWS, Azure, GCP, OpenStack, and bare-metal environments.
 url: https://raw.githubusercontent.com/api-evangelist/avi-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
@@ -29,7 +25,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-21'
 image: https://avinetworks.com/wp-content/uploads/2018/03/avi-networks-logo.png
 tags:
 - Company
@@ -49,6 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/vmware/
+  name: VMware
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2019
 - type: Website
   url: https://avinetworks.com/
 - type: DeveloperPortal
@@ -66,3 +68,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: vmware
+x-relationship: acquisition
+x-acquired: 2019
