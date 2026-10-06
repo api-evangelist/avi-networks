@@ -38,7 +38,7 @@ accessModel:
   - {url: 'https://avinetworks.com/', status: 301, note: 'declared website redirects to https://www.vmware.com/products/cloud-infrastructure/advanced-services/avi-load-balancer — a different registrable domain (avinetworks.com -> vmware.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-21'
+modified: '2026-10-06'
 image: https://avinetworks.com/wp-content/uploads/2018/03/avi-networks-logo.png
 tags:
 - Company
@@ -58,6 +58,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.vmware.com/blog
+  type: Blog
 - type: ParentCompany
   url: https://apis.io/providers/vmware/
   name: VMware
